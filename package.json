@@ -1,0 +1,25 @@
+{
+  "name": "mymrmush-advent-of-code-2023",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "minify": "npx minify-all-js dist -m -M",
+    "start": "npm run build && clear && node dist/index.js",
+    "today": "npm run build && clear && node dist/index.js -t"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "figlet": "^1.7.0"
+  },
+  "devDependencies": {
+    "@commander-js/extra-typings": "^11.1.0",
+    "@types/figlet": "^1.5.8",
+    "@types/node": "^20.10.1",
+    "typescript": "^5.3.2"
+  }
+}
