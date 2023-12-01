@@ -1,13 +1,16 @@
 #! /usr/bin/env node
 import { log } from "console";
 import * as readline from "readline";
+import { exit } from "process";
 import figlet from "figlet";
 import DayModuleRepresentation from "./tools/DayModuleRepresentation";
 import day1 from "./days/day1/day1";
-import { exit } from "process";
+import day2 from "./days/day2/day2";
+
 
 const dayModules:DayModuleRepresentation[] = [
-    new DayModuleRepresentation(day1, "Trebuchet?!")
+    new DayModuleRepresentation(day1, "Trebuchet?!"),
+    new DayModuleRepresentation(day2, "")
 ];
 const reader = readline.createInterface({
     input: process.stdin,
