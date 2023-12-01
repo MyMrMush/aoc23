@@ -7,7 +7,7 @@ import day1 from "./days/day1/day1";
 import { exit } from "process";
 
 const dayModules:DayModuleRepresentation[] = [
-    new DayModuleRepresentation(day1, "")
+    new DayModuleRepresentation(day1, "Trebuchet?!")
 ];
 const reader = readline.createInterface({
     input: process.stdin,
@@ -20,7 +20,7 @@ log(figlet.textSync(
 
 const today = new Date();
 if(process.argv[2] === "-t" && today.getDate() <= 24 && today.getMonth() === 11 && dayModules){
-    execDayModule(dayModules, today.getDay()-1);
+    execDayModule(dayModules, today.getDate());
     exit();
 }
     
