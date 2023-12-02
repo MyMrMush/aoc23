@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npx tsc",
     "minify": "npx minify-all-js dist -m -M",
-    "start": "npm run build && clear && node dist/index.js",
+    "start": "npm run build && npm run minify && clear && node dist/index.js",
     "today": "npm run build && clear && node dist/index.js -t"
   },
   "keywords": [],
