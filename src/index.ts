@@ -10,7 +10,7 @@ import day2 from "./days/day2/day2";
 
 const dayModules:DayModuleRepresentation[] = [
     new DayModuleRepresentation(day1, "Trebuchet?!"),
-    new DayModuleRepresentation(day2, "")
+    new DayModuleRepresentation(day2, "Cube Conundrum")
 ];
 const reader = readline.createInterface({
     input: process.stdin,
