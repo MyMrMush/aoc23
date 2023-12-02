@@ -6,11 +6,13 @@ import figlet from "figlet";
 import DayModuleRepresentation from "./tools/DayModuleRepresentation";
 import day1 from "./days/day1/day1";
 import day2 from "./days/day2/day2";
+import day3 from "./days/day3/day3";
 
 
 const dayModules:DayModuleRepresentation[] = [
     new DayModuleRepresentation(day1, "Trebuchet?!"),
-    new DayModuleRepresentation(day2, "Cube Conundrum")
+    new DayModuleRepresentation(day2, "Cube Conundrum"),
+    new DayModuleRepresentation(day3, "")
 ];
 const reader = readline.createInterface({
     input: process.stdin,
